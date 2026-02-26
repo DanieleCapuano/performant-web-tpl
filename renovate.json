@@ -3,6 +3,9 @@
   "extends": [
     "config:recommended"
   ],
+  "schedule": [
+    "after 3am and before 4am every weekday"
+  ],
   "automerge": false,
   "packageRules": [
     {
