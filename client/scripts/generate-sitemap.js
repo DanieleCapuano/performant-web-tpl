@@ -8,6 +8,7 @@
 import { SitemapStream, streamToPromise } from 'sitemap';
 import { createWriteStream } from 'fs';
 import { resolve } from 'path';
+import { pathToFileURL } from 'node:url';
 
 // Define your site's URLs
 const SITE_URL = 'https://yoursite.com';
@@ -45,7 +46,7 @@ async function generateSitemap() {
 }
 
 // Run if called directly
-if (import.meta.url === `file://${process.argv[1]}`) {
+if (import.meta.url === pathToFileURL(process.argv[1]).href) {
   generateSitemap();
 }
 
