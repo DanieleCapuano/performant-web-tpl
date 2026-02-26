@@ -34,7 +34,7 @@
     "globals": "^17.3.0",
     "lighthouse": "^13.0.3",
     "rollup-plugin-visualizer": "^7.0.0",
-    "sitemap": "^7.1.1",
+    "sitemap": "^9.0.0",
     "typescript": "^5.3.3",
     "vite": "^7.3.1",
     "vite-plugin-compression": "^0.5.1",
