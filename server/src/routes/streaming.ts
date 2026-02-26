@@ -19,7 +19,7 @@ const router: IRouter = Router();
  */
 router.get('/video/:filename', (req: Request, res: Response) => {
   try {
-    const filename = req.params.filename;
+    const filename = Array.isArray(req.params.filename) ? req.params.filename[0] : req.params.filename;
     const videoPath = path.join(__dirname, '../../../assets/videos', filename);
     
     if (!existsSync(videoPath)) {
@@ -137,7 +137,7 @@ router.get('/events', (req: Request, res: Response) => {
  */
 router.get('/download/:filename', (req: Request, res: Response) => {
   try {
-    const filename = req.params.filename;
+    const filename = Array.isArray(req.params.filename) ? req.params.filename[0] : req.params.filename;
     const filePath = path.join(__dirname, '../../../assets/downloads', filename);
     
     if (!existsSync(filePath)) {
