@@ -27,6 +27,7 @@ html {
   position: fixed;
   top: 0;
   opacity: 1;
+  pointer-events: none;
   transition: opacity 0.75s ease-in-out;
 }
 
