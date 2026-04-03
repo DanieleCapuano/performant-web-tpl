@@ -87,7 +87,7 @@ export function inlineCritical(): Plugin {
 
                 try {
                     const criticalCss = readFileSync(
-                        resolve(__dirname, '../src/critical/critical.css'),
+                        resolve(__dirname, '../src/critical/critical.scss'),
                         'utf-8'
                     );
 

@@ -25,7 +25,7 @@ declare const self: ServiceWorkerGlobalScope;
 // This is required for vite-plugin-pwa with injectManifest strategy
 const precacheManifest = self.__WB_MANIFEST;
 
-const CACHE_VERSION = 'dev-1772205416173';
+const CACHE_VERSION = 'dev-1775212131951';
 const STATIC_CACHE = `static-${CACHE_VERSION}`;
 const DYNAMIC_CACHE = `dynamic-${CACHE_VERSION}`;
 const IMAGE_CACHE = `images-${CACHE_VERSION}`;
