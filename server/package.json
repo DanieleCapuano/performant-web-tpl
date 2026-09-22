@@ -13,7 +13,7 @@
     "@ffmpeg-installer/ffmpeg": "^1.1.0",
     "compression": "^1.7.4",
     "cors": "^2.8.5",
-    "dotenv": "^17.0.0",
+    "dotenv": "^18.0.0",
     "execa": "^9.6.1",
     "express": "^5.0.0",
     "helmet": "^8.0.0",
